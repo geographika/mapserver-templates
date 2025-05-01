@@ -1,0 +1,9 @@
+{% include "header.html" %}
+<h1>MapServer Services</h1>
+<ul>
+    {% for link in linkset %}{% for desc in link.service-desc %}
+    <li>{{ desc.title }}</li>
+    {% endfor %}{% endfor %}
+</ul>
+</body>
+</html>
