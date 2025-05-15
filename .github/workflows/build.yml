@@ -43,7 +43,6 @@ jobs:
         run: |
           mkdir build
           cd build
-          mkdir output
           cmake .. -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT\scripts\buildsystems\vcpkg.cmake" -A x64
           cmake --build . --config Debug
 
@@ -52,7 +51,10 @@ jobs:
         shell: pwsh
         run: |
           cd build
+          mkdir output
           .\Debug\mapserver-templates.exe ../template.inja ../data.json > ./output/output.html
+          cd output
+          ls
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages

@@ -1,4 +1,7 @@
-﻿$vcpkg = "D:\GitHub\vcpkg"
+﻿# MapServer Templates
+
+```
+$vcpkg = "D:\GitHub\vcpkg"
 cd $vcpkg
 git pull
 
@@ -13,6 +16,7 @@ vcpkg search inja
 
 vcpkg install inja
 vcpkg install nlohmann-json
+```
 
 # add following to Project → Properties 
 # C/C++ → General → Additional Include Directories
