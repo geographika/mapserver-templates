@@ -1,0 +1,517 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>Mapserver entry page</title>
+    <link href="css/app.61f1e886.css" rel="preload" as="style">
+    <link href="css/chunk-vendors.c4cc96e8.css" rel="preload" as="style">
+    <link href="js/app.2b7d7249.js" rel="preload" as="script">
+    <link href="js/chunk-vendors.bfd255c1.js" rel="preload" as="script">
+    <link href="css/chunk-vendors.c4cc96e8.css" rel="stylesheet">
+    <link href="css/app.61f1e886.css" rel="stylesheet">
+    <script async="" defer="" src="https://piwik.wur.nl//piwik.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-narrow has-text-centered">
+                <figure class="image is-inline-block has-text-centered"><img src="img/logo_isric.9115b0d9.svg"></figure>
+            </div>
+        </div>
+    </div>
+    <p>&nbsp;&nbsp;</p>
+    <div class="container">
+        <h1 class="title has-text-centered">Mapserver entry page</h1>
+        <p></p>
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-offset-3"></div>
+                <div class="column is-6 has-text-justified">
+                    <div class="has-text-justified">
+                        <p>Mapserver provides OGC web-services that can be used to <strong>pull soil data directly from ISRIC servers</strong> (Please check <a href="https://isric.org/about/data-policy" target="_blank">ISRIC's data policy, disclaimer and citation</a>).</p>
+                        <br>
+                        <p>GIS softwares like <a href="https://qgis.org" target="_blank">QGIS</a> and ArcGIS can be used to download data for specific areas, together with links bellow indicated.</p>
+                        <br> For data citation and license, please consult our: <a href="https://www.isric.org/about/data-policy" target="_blank">Data and Software Policy</a><br><br>
+                        <p><strong>Please check the ISRIC tutorial on how to access layers: </strong></p>
+                        <p><strong>WMS: </strong><a href="https://www.isric.org/instruction-wms" target="_blank">https://www.isric.org/instruction-wms</a></p>
+                        <p><strong>WCS: </strong><a href="https://www.isric.org/web-coverage-services-wcs" target="_blank">https://www.isric.org/web-coverage-services-wcs</a></p>
+                        <br>
+                        <p><strong>For soilgrids FAQ and information: </strong><a href="https://www.isric.org/explore/soilgrids/faq-soilgrids" target="_blank">Soilgrids FAQ</a></p>
+                        <strong>Problems ?! <a href="#" data-contact="c29pbGdyaWRzQGlzcmljLm9yZw==" data-subj="bWFwc2VydmVyIHByb2JsZW0=" onfocus="this.href = 'mailto:' + atob(this.dataset.contact) + '?subject=' + atob(this.dataset.subj || '')">Contact us</a></strong>
+                    </div>
+                </div>
+                <div class="column is-offset-3"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <hr>
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-offset-1"></div>
+                <div class="column is-10">
+                    <div class="b-tabs">
+                        <nav class="tabs">
+                            <ul>
+                                <li class=""><a><span class="icon"><i class="fas fa-globe fa-lg"></i></span> <span>Soilgrids</span></a></li>
+                                <li class="is-active"><a><span class="icon"><i class="fas fa-draw-polygon fa-lg"></i></span> <span>Vector Features</span></a></li>
+                                <li class=""><a><span class="icon"><i class="fas fa-globe-africa fa-lg"></i></span> <span>Rasters</span></a></li>
+                            </ul>
+                        </nav>
+                        <section class="tab-content">
+                            <div class="tab-item" style="display: none;">
+                                <div class="tile is-ancestor">
+                                    <div class="tile is-vertical is-parent">
+                                        <div class="tile is-child box">
+                                            <p class="title has-text-left">wrb</p>
+                                            <p class="subtitle has-text-left">WRB classes and probabilites</p>
+                                            <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: wrb.map</code></span></p>
+                                            <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/wrb.map" target="_blank">https://maps.isric.org/mapserv?map=/map/wrb.map</a></code></span></p>
+                                            <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/wrb.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=MostProbable&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">MostProbable</a></code></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="tile is-vertical is-parent">
+                                        <div class="tile is-child box">
+                                            <p class="title has-text-left">bdod</p>
+                                            <p class="subtitle has-text-left">Bulk density</p>
+                                            <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: bdod.map</code></span></p>
+                                            <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/bdod.map" target="_blank">https://maps.isric.org/mapserv?map=/map/bdod.map</a></code></span></p>
+                                            <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/bdod.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=bdod_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">bdod_0-5cm_mean</a></code></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile is-ancestor">
+                                    <div class="tile is-vertical is-parent">
+                                        <div class="tile is-child box">
+                                            <p class="title has-text-left">cec</p>
+                                            <p class="subtitle has-text-left">Cation exchange capacity at ph 7</p>
+                                            <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: cec.map</code></span></p>
+                                            <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/cec.map" target="_blank">https://maps.isric.org/mapserv?map=/map/cec.map</a></code></span></p>
+                                            <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/cec.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=cec_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">cec_0-5cm_mean</a></code></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="tile is-vertical is-parent">
+                                        <div class="tile is-child box">
+                                            <p class="title has-text-left">cfvo</p>
+                                            <p class="subtitle has-text-left">Coarse fragments volumetric</p>
+                                            <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: cfvo.map</code></span></p>
+                                            <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/cfvo.map" target="_blank">https://maps.isric.org/mapserv?map=/map/cfvo.map</a></code></span></p>
+                                            <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/cfvo.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=cfvo_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">cfvo_0-5cm_mean</a></code></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile is-ancestor">
+                                    <div class="tile is-vertical is-parent">
+                                        <div class="tile is-child box">
+                                            <p class="title has-text-left">clay</p>
+                                            <p class="subtitle has-text-left">Clay content</p>
+                                            <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: clay.map</code></span></p>
+                                            <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/clay.map" target="_blank">https://maps.isric.org/mapserv?map=/map/clay.map</a></code></span></p>
+                                            <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/clay.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=clay_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">clay_0-5cm_mean</a></code></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="tile is-vertical is-parent">
+                                        <div class="tile is-child box">
+                                            <p class="title has-text-left">nitrogen</p>
+                                            <p class="subtitle has-text-left">Nitrogen</p>
+                                            <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: nitrogen.map</code></span></p>
+                                            <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/nitrogen.map" target="_blank">https://maps.isric.org/mapserv?map=/map/nitrogen.map</a></code></span></p>
+                                            <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/nitrogen.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=nitrogen_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">nitrogen_0-5cm_mean</a></code></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile is-ancestor">
+                                    <div class="tile is-vertical is-parent">
+                                        <div class="tile is-child box">
+                                            <p class="title has-text-left">phh2o</p>
+                                            <p class="subtitle has-text-left">Soil pH in H2O</p>
+                                            <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: phh2o.map</code></span></p>
+                                            <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/phh2o.map" target="_blank">https://maps.isric.org/mapserv?map=/map/phh2o.map</a></code></span></p>
+                                            <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/phh2o.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=phh2o_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">phh2o_0-5cm_mean</a></code></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="tile is-vertical is-parent">
+                                        <div class="tile is-child box">
+                                            <p class="title has-text-left">sand</p>
+                                            <p class="subtitle has-text-left">Sand content</p>
+                                            <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: sand.map</code></span></p>
+                                            <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/sand.map" target="_blank">https://maps.isric.org/mapserv?map=/map/sand.map</a></code></span></p>
+                                            <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/sand.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=sand_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">sand_0-5cm_mean</a></code></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile is-ancestor">
+                                    <div class="tile is-vertical is-parent">
+                                        <div class="tile is-child box">
+                                            <p class="title has-text-left">silt</p>
+                                            <p class="subtitle has-text-left">Silt content</p>
+                                            <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: silt.map</code></span></p>
+                                            <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/silt.map" target="_blank">https://maps.isric.org/mapserv?map=/map/silt.map</a></code></span></p>
+                                            <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/silt.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=silt_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">silt_0-5cm_mean</a></code></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="tile is-vertical is-parent">
+                                        <div class="tile is-child box">
+                                            <p class="title has-text-left">soc</p>
+                                            <p class="subtitle has-text-left">Soil organic carbon content</p>
+                                            <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: soc.map</code></span></p>
+                                            <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/soc.map" target="_blank">https://maps.isric.org/mapserv?map=/map/soc.map</a></code></span></p>
+                                            <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/soc.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=soc_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">soc_0-5cm_mean</a></code></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile is-ancestor">
+                                    <div class="tile is-vertical is-parent">
+                                        <div class="tile is-child box">
+                                            <p class="title has-text-left">ocs</p>
+                                            <p class="subtitle has-text-left">Soil organic carbon stock</p>
+                                            <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: ocs.map</code></span></p>
+                                            <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/ocs.map" target="_blank">https://maps.isric.org/mapserv?map=/map/ocs.map</a></code></span></p>
+                                            <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/ocs.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=ocs_0-30cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">ocs_0-30cm_mean</a></code></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="tile is-vertical is-parent">
+                                        <div class="tile is-child box">
+                                            <p class="title has-text-left">ocd</p>
+                                            <p class="subtitle has-text-left">Organic carbon densities</p>
+                                            <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: ocd.map</code></span></p>
+                                            <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/ocd.map" target="_blank">https://maps.isric.org/mapserv?map=/map/ocd.map</a></code></span></p>
+                                            <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/ocd.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=ocd_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">ocd_0-5cm_mean</a></code></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile is-ancestor">
+                                    <div class="tile is-vertical is-parent">
+                                        <div class="tile is-child box">
+                                            <p class="title has-text-left">wv1500</p>
+                                            <p class="subtitle has-text-left">Water Layer wv1500</p>
+                                            <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: wv1500.map</code></span></p>
+                                            <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/wv1500.map" target="_blank">https://maps.isric.org/mapserv?map=/map/wv1500.map</a></code></span></p>
+                                            <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/wv1500.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=wv1500_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">wv1500_0-5cm_mean</a></code></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="tile is-vertical is-parent">
+                                        <div class="tile is-child box">
+                                            <p class="title has-text-left">wv0033</p>
+                                            <p class="subtitle has-text-left">Water Layer wv0033</p>
+                                            <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: wv0033.map</code></span></p>
+                                            <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/wv0033.map" target="_blank">https://maps.isric.org/mapserv?map=/map/wv0033.map</a></code></span></p>
+                                            <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/wv0033.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=wv0033_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">wv0033_0-5cm_mean</a></code></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="tile is-vertical is-parent">
+                                        <div class="tile is-child box">
+                                            <p class="title has-text-left">wv0010</p>
+                                            <p class="subtitle has-text-left">Water Layer wv0010</p>
+                                            <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: wv0010.map</code></span></p>
+                                            <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/wv0010.map" target="_blank">https://maps.isric.org/mapserv?map=/map/wv0010.map</a></code></span></p>
+                                            <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/wv0010.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=wv0010_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">wv0010_0-5cm_mean</a></code></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-item" style="">
+                                <div class="tile is-ancestor">
+                                    <div class="tile is-vertical is-parent">
+                                        <div class="tile is-child box">
+                                            <p class="title has-text-left">wosis_latest</p>
+                                            <p class="subtitle has-text-left">Latest WOSIS data</p>
+                                            <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: wosis_latest.map</code></span></p>
+                                            <p class="has-text-left"><span data-label="Link for WFS service. Use it in QGIS or ArcGIS" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WFS link: <a href="https://maps.isric.org/mapserv?map=/map/wosis_latest.map" target="_blank">https://maps.isric.org/mapserv?map=/map/wosis_latest.map</a></code></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="tile is-vertical is-parent">
+                                        <div class="tile is-child box">
+                                            <p class="title has-text-left">external</p>
+                                            <p class="subtitle has-text-left">Non-ISRIC datasets</p>
+                                            <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: external.map</code></span></p>
+                                            <p class="has-text-left"><span data-label="Link for WFS service. Use it in QGIS or ArcGIS" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WFS link: <a href="https://maps.isric.org/mapserv?map=/map/external.map" target="_blank">https://maps.isric.org/mapserv?map=/map/external.map</a></code></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-item" style="display: none;">
+                                <div class="tile is-ancestor">
+                                    <div class="tile is-vertical is-parent">
+                                        <div class="tile is-child box">
+                                            <p class="title has-text-left">gyga</p>
+                                            <p class="subtitle has-text-left">AfSIS-GYGA functional soil information for Sub-Saharan Africa (RZ-PAWHC-SSA)</p>
+                                            <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: gyga.map</code></span></p>
+                                            <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in into QGIS or ArcGIS" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/gyga.map" target="_blank">https://maps.isric.org/mapserv?map=/map/gyga.map</a></code></span></p>
+                                            <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/gyga.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-40,-50,55,15&amp;CRS=EPSG:4326&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=gyga_af_agg_erzd_crfvol__m_1km&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">gyga_af_agg_erzd_crfvol__m_1km</a></code></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="tile is-vertical is-parent">
+                                        <div class="tile is-child box">
+                                            <p class="title has-text-left">af250m_nutrient</p>
+                                            <p class="subtitle has-text-left">Africa SoilGrids nutrients</p>
+                                            <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: af250m_nutrient.map</code></span></p>
+                                            <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in into QGIS or ArcGIS" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/af250m_nutrient.map" target="_blank">https://maps.isric.org/mapserv?map=/map/af250m_nutrient.map</a></code></span></p>
+                                            <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/af250m_nutrient.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-40,-50,55,15&amp;CRS=EPSG:4326&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=af250m_nutrient_n_m_agg30cm&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">af250m_nutrient_n_m_agg30cm</a></code></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="column is-offset-1"></div>
+            </div>
+        </div>
+    </div>
+    <noscript><strong>We're sorry but mapserver support page doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
+    <div id="app">
+        <!---->
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-narrow has-text-centered">
+                    <figure class="image is-inline-block has-text-centered"><img src="img/logo_isric.9115b0d9.svg"></figure>
+                </div>
+            </div>
+        </div>
+        <p>&nbsp;&nbsp;</p>
+        <div class="container">
+            <h1 class="title has-text-centered">Mapserver entry page</h1>
+            <p></p>
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-offset-3"></div>
+                    <div class="column is-6 has-text-justified">
+                        <div class="has-text-justified">
+                            <p>Mapserver provides OGC web-services that can be used to <strong>pull soil data directly from ISRIC servers</strong> (Please check <a href="https://isric.org/about/data-policy" target="_blank">ISRIC's data policy, disclaimer and citation</a>).</p>
+                            <br>
+                            <p>GIS softwares like <a href="https://qgis.org" target="_blank">QGIS</a> and ArcGIS can be used to download data for specific areas, together with links bellow indicated.</p>
+                            <br> For data citation and license, please consult our: <a href="https://www.isric.org/about/data-policy" target="_blank">Data and Software Policy</a><br><br>
+                            <p><strong>Please check the ISRIC tutorial on how to access layers: </strong></p>
+                            <p><strong>WMS: </strong><a href="https://www.isric.org/instruction-wms" target="_blank">https://www.isric.org/instruction-wms</a></p>
+                            <p><strong>WCS: </strong><a href="https://www.isric.org/web-coverage-services-wcs" target="_blank">https://www.isric.org/web-coverage-services-wcs</a></p>
+                            <br>
+                            <p><strong>For soilgrids FAQ and information: </strong><a href="https://www.isric.org/explore/soilgrids/faq-soilgrids" target="_blank">Soilgrids FAQ</a></p>
+                            <strong>Problems ?! <a href="#" data-contact="c29pbGdyaWRzQGlzcmljLm9yZw==" data-subj="bWFwc2VydmVyIHByb2JsZW0=" onfocus="this.href = 'mailto:' + atob(this.dataset.contact) + '?subject=' + atob(this.dataset.subj || '')">Contact us</a></strong>
+                        </div>
+                    </div>
+                    <div class="column is-offset-3"></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <hr>
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-offset-1"></div>
+                    <div class="column is-10">
+                        <div class="b-tabs">
+                            <nav class="tabs">
+                                <ul>
+                                    <li class=""><a><span class="icon"><i class="fas fa-globe fa-lg"></i></span> <span>Soilgrids</span></a></li>
+                                    <li class="is-active"><a><span class="icon"><i class="fas fa-draw-polygon fa-lg"></i></span> <span>Vector Features</span></a></li>
+                                    <li class=""><a><span class="icon"><i class="fas fa-globe-africa fa-lg"></i></span> <span>Rasters</span></a></li>
+                                </ul>
+                            </nav>
+                            <section class="tab-content">
+                                <div class="tab-item" style="display: none;">
+                                    <div class="tile is-ancestor">
+                                        <div class="tile is-vertical is-parent">
+                                            <div class="tile is-child box">
+                                                <p class="title has-text-left">wrb</p>
+                                                <p class="subtitle has-text-left">WRB classes and probabilites</p>
+                                                <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: wrb.map</code></span></p>
+                                                <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/wrb.map" target="_blank">https://maps.isric.org/mapserv?map=/map/wrb.map</a></code></span></p>
+                                                <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/wrb.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=MostProbable&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">MostProbable</a></code></span></p>
+                                            </div>
+                                        </div>
+                                        <div class="tile is-vertical is-parent">
+                                            <div class="tile is-child box">
+                                                <p class="title has-text-left">bdod</p>
+                                                <p class="subtitle has-text-left">Bulk density</p>
+                                                <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: bdod.map</code></span></p>
+                                                <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/bdod.map" target="_blank">https://maps.isric.org/mapserv?map=/map/bdod.map</a></code></span></p>
+                                                <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/bdod.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=bdod_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">bdod_0-5cm_mean</a></code></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile is-ancestor">
+                                        <div class="tile is-vertical is-parent">
+                                            <div class="tile is-child box">
+                                                <p class="title has-text-left">cec</p>
+                                                <p class="subtitle has-text-left">Cation exchange capacity at ph 7</p>
+                                                <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: cec.map</code></span></p>
+                                                <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/cec.map" target="_blank">https://maps.isric.org/mapserv?map=/map/cec.map</a></code></span></p>
+                                                <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/cec.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=cec_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">cec_0-5cm_mean</a></code></span></p>
+                                            </div>
+                                        </div>
+                                        <div class="tile is-vertical is-parent">
+                                            <div class="tile is-child box">
+                                                <p class="title has-text-left">cfvo</p>
+                                                <p class="subtitle has-text-left">Coarse fragments volumetric</p>
+                                                <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: cfvo.map</code></span></p>
+                                                <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/cfvo.map" target="_blank">https://maps.isric.org/mapserv?map=/map/cfvo.map</a></code></span></p>
+                                                <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/cfvo.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=cfvo_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">cfvo_0-5cm_mean</a></code></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile is-ancestor">
+                                        <div class="tile is-vertical is-parent">
+                                            <div class="tile is-child box">
+                                                <p class="title has-text-left">clay</p>
+                                                <p class="subtitle has-text-left">Clay content</p>
+                                                <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: clay.map</code></span></p>
+                                                <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/clay.map" target="_blank">https://maps.isric.org/mapserv?map=/map/clay.map</a></code></span></p>
+                                                <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/clay.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=clay_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">clay_0-5cm_mean</a></code></span></p>
+                                            </div>
+                                        </div>
+                                        <div class="tile is-vertical is-parent">
+                                            <div class="tile is-child box">
+                                                <p class="title has-text-left">nitrogen</p>
+                                                <p class="subtitle has-text-left">Nitrogen</p>
+                                                <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: nitrogen.map</code></span></p>
+                                                <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/nitrogen.map" target="_blank">https://maps.isric.org/mapserv?map=/map/nitrogen.map</a></code></span></p>
+                                                <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/nitrogen.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=nitrogen_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">nitrogen_0-5cm_mean</a></code></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile is-ancestor">
+                                        <div class="tile is-vertical is-parent">
+                                            <div class="tile is-child box">
+                                                <p class="title has-text-left">phh2o</p>
+                                                <p class="subtitle has-text-left">Soil pH in H2O</p>
+                                                <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: phh2o.map</code></span></p>
+                                                <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/phh2o.map" target="_blank">https://maps.isric.org/mapserv?map=/map/phh2o.map</a></code></span></p>
+                                                <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/phh2o.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=phh2o_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">phh2o_0-5cm_mean</a></code></span></p>
+                                            </div>
+                                        </div>
+                                        <div class="tile is-vertical is-parent">
+                                            <div class="tile is-child box">
+                                                <p class="title has-text-left">sand</p>
+                                                <p class="subtitle has-text-left">Sand content</p>
+                                                <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: sand.map</code></span></p>
+                                                <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/sand.map" target="_blank">https://maps.isric.org/mapserv?map=/map/sand.map</a></code></span></p>
+                                                <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/sand.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=sand_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">sand_0-5cm_mean</a></code></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile is-ancestor">
+                                        <div class="tile is-vertical is-parent">
+                                            <div class="tile is-child box">
+                                                <p class="title has-text-left">silt</p>
+                                                <p class="subtitle has-text-left">Silt content</p>
+                                                <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: silt.map</code></span></p>
+                                                <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/silt.map" target="_blank">https://maps.isric.org/mapserv?map=/map/silt.map</a></code></span></p>
+                                                <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/silt.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=silt_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">silt_0-5cm_mean</a></code></span></p>
+                                            </div>
+                                        </div>
+                                        <div class="tile is-vertical is-parent">
+                                            <div class="tile is-child box">
+                                                <p class="title has-text-left">soc</p>
+                                                <p class="subtitle has-text-left">Soil organic carbon content</p>
+                                                <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: soc.map</code></span></p>
+                                                <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/soc.map" target="_blank">https://maps.isric.org/mapserv?map=/map/soc.map</a></code></span></p>
+                                                <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/soc.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=soc_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">soc_0-5cm_mean</a></code></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile is-ancestor">
+                                        <div class="tile is-vertical is-parent">
+                                            <div class="tile is-child box">
+                                                <p class="title has-text-left">ocs</p>
+                                                <p class="subtitle has-text-left">Soil organic carbon stock</p>
+                                                <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: ocs.map</code></span></p>
+                                                <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/ocs.map" target="_blank">https://maps.isric.org/mapserv?map=/map/ocs.map</a></code></span></p>
+                                                <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/ocs.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=ocs_0-30cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">ocs_0-30cm_mean</a></code></span></p>
+                                            </div>
+                                        </div>
+                                        <div class="tile is-vertical is-parent">
+                                            <div class="tile is-child box">
+                                                <p class="title has-text-left">ocd</p>
+                                                <p class="subtitle has-text-left">Organic carbon densities</p>
+                                                <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: ocd.map</code></span></p>
+                                                <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/ocd.map" target="_blank">https://maps.isric.org/mapserv?map=/map/ocd.map</a></code></span></p>
+                                                <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/ocd.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=ocd_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">ocd_0-5cm_mean</a></code></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile is-ancestor">
+                                        <div class="tile is-vertical is-parent">
+                                            <div class="tile is-child box">
+                                                <p class="title has-text-left">wv1500</p>
+                                                <p class="subtitle has-text-left">Water Layer wv1500</p>
+                                                <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: wv1500.map</code></span></p>
+                                                <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/wv1500.map" target="_blank">https://maps.isric.org/mapserv?map=/map/wv1500.map</a></code></span></p>
+                                                <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/wv1500.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=wv1500_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">wv1500_0-5cm_mean</a></code></span></p>
+                                            </div>
+                                        </div>
+                                        <div class="tile is-vertical is-parent">
+                                            <div class="tile is-child box">
+                                                <p class="title has-text-left">wv0033</p>
+                                                <p class="subtitle has-text-left">Water Layer wv0033</p>
+                                                <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: wv0033.map</code></span></p>
+                                                <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/wv0033.map" target="_blank">https://maps.isric.org/mapserv?map=/map/wv0033.map</a></code></span></p>
+                                                <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/wv0033.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=wv0033_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">wv0033_0-5cm_mean</a></code></span></p>
+                                            </div>
+                                        </div>
+                                        <div class="tile is-vertical is-parent">
+                                            <div class="tile is-child box">
+                                                <p class="title has-text-left">wv0010</p>
+                                                <p class="subtitle has-text-left">Water Layer wv0010</p>
+                                                <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: wv0010.map</code></span></p>
+                                                <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/wv0010.map" target="_blank">https://maps.isric.org/mapserv?map=/map/wv0010.map</a></code></span></p>
+                                                <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/wv0010.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=wv0010_0-5cm_mean&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">wv0010_0-5cm_mean</a></code></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-item" style="">
+                                    <div class="tile is-ancestor">
+                                        <div class="tile is-vertical is-parent">
+                                            <div class="tile is-child box">
+                                                <p class="title has-text-left">wosis_latest</p>
+                                                <p class="subtitle has-text-left">Latest WOSIS data</p>
+                                                <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: wosis_latest.map</code></span></p>
+                                                <p class="has-text-left"><span data-label="Link for WFS service. Use it in QGIS or ArcGIS" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WFS link: <a href="https://maps.isric.org/mapserv?map=/map/wosis_latest.map" target="_blank">https://maps.isric.org/mapserv?map=/map/wosis_latest.map</a></code></span></p>
+                                            </div>
+                                        </div>
+                                        <div class="tile is-vertical is-parent">
+                                            <div class="tile is-child box">
+                                                <p class="title has-text-left">external</p>
+                                                <p class="subtitle has-text-left">Non-ISRIC datasets</p>
+                                                <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: external.map</code></span></p>
+                                                <p class="has-text-left"><span data-label="Link for WFS service. Use it in QGIS or ArcGIS" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WFS link: <a href="https://maps.isric.org/mapserv?map=/map/external.map" target="_blank">https://maps.isric.org/mapserv?map=/map/external.map</a></code></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-item" style="display: none;">
+                                    <div class="tile is-ancestor">
+                                        <div class="tile is-vertical is-parent">
+                                            <div class="tile is-child box">
+                                                <p class="title has-text-left">gyga</p>
+                                                <p class="subtitle has-text-left">AfSIS-GYGA functional soil information for Sub-Saharan Africa (RZ-PAWHC-SSA)</p>
+                                                <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: gyga.map</code></span></p>
+                                                <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in into QGIS or ArcGIS" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/gyga.map" target="_blank">https://maps.isric.org/mapserv?map=/map/gyga.map</a></code></span></p>
+                                                <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/gyga.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-40,-50,55,15&amp;CRS=EPSG:4326&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=gyga_af_agg_erzd_crfvol__m_1km&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">gyga_af_agg_erzd_crfvol__m_1km</a></code></span></p>
+                                            </div>
+                                        </div>
+                                        <div class="tile is-vertical is-parent">
+                                            <div class="tile is-child box">
+                                                <p class="title has-text-left">af250m_nutrient</p>
+                                                <p class="subtitle has-text-left">Africa SoilGrids nutrients</p>
+                                                <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: af250m_nutrient.map</code></span></p>
+                                                <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in into QGIS or ArcGIS" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/af250m_nutrient.map" target="_blank">https://maps.isric.org/mapserv?map=/map/af250m_nutrient.map</a></code></span></p>
+                                                <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-right is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/af250m_nutrient.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-40,-50,55,15&amp;CRS=EPSG:4326&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=af250m_nutrient_n_m_agg30cm&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">af250m_nutrient_n_m_agg30cm</a></code></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="column is-offset-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/chunk-vendors.bfd255c1.js"></script>
+    <script src="js/app.2b7d7249.js"></script>
+</body>

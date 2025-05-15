@@ -1,0 +1,35 @@
+<nav class="tabs">
+    <ul>
+        {% for name in unique_names %}
+        <li class="tab{% if loop.index == 1 %} is-active{% endif %}" data-tab="{{ loop.index }}">
+            <a>
+                <span class="icon"><i class="fas fa-globe fa-lg"></i></span>
+                <span>{{ name }}</span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
+<section class="tab-content">
+    {% for name in unique_names %}
+    {% for link in linkset %}
+    {% if link.meta.name == name %}
+    {% for desc in link.service-desc -%}
+    <div class="tab-item" id="tab{{ loop.parent.index }}" style="">
+        <div class="tile is-ancestor">
+            <div class="tile is-vertical is-parent">
+                <div class="tile is-child box">
+                    <p class="title has-text-left">{{ name }}</p>
+                    <p class="subtitle has-text-left">{{ desc.title }}</p>
+                    <p class="has-text-left"><span data-label="Mapserver file (for reference)" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>mapfile: wrb.map</code></span></p>
+                    <p class="has-text-left"><span data-label="Link for WMS or WCS service. Use it in QGIS or ArcGIS" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>WxS link: <a href="https://maps.isric.org/mapserv?map=/map/wrb.map" target="_blank">https://maps.isric.org/mapserv?map=/map/wrb.map</a></code></span></p>
+                    <p class="has-text-left"><span data-label="Fast layer display" class="is-light is-left is-small b-tooltip is-multiline" style="transition-delay: 0ms;"><code>Openlayers display for: <a href="https://maps.isric.org/mapserv?map=/map/wrb.map&amp;SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-19948500.0,-6147449.0951699,19688885.757062882,8361000.0&amp;CRS=EPSG:152160&amp;WIDTH=1426&amp;HEIGHT=895&amp;LAYERS=MostProbable&amp;STYLES=&amp;FORMAT=application/openlayers" target="_blank">MostProbable</a></code></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor -%}
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+</section>

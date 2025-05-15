@@ -1,0 +1,95 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://demo.mapserver.org/cgi-bin/wms?",
+      "meta": {
+        "name": "WMS",
+        "type": "WMS"
+      },
+      "service-desc": [
+        {
+          "href": "https://demo.mapserver.org/cgi-bin/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities",
+          "title": "WMS Demo Server for MapServer",
+          "type": "text/xml"
+        }
+      ]
+    },
+    {
+      "anchor": "https://demo.mapserver.org/cgi-bin/msautotest?",
+      "meta": {
+        "name": "WMS",
+        "type": "WMS"
+      },
+      "service-desc": [
+        {
+          "href": "https://demo.mapserver.org/cgi-bin/msautotest?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities",
+          "title": "WMS demo server for MapServer, used in the msautotest suite",
+          "type": "text/xml"
+        }
+      ]
+    },
+    {
+      "anchor": "https://demo.mapserver.org/cgi-bin/wms_landsat?",
+      "meta": {
+        "name": "WMS",
+        "type": "WMS"
+      },
+      "service-desc": [
+        {
+          "href": "https://demo.mapserver.org/cgi-bin/wms_landsat?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities",
+          "title": "This demonstration server showcases MapServer (www.mapserver.org) and its OGC support",
+          "type": "text/xml"
+        }
+      ]
+    },
+    {
+      "anchor": "https://demo.mapserver.org/cgi-bin/wfs?",
+      "meta": {
+        "name": "MapServer WFS",
+        "type": "WFS"
+      },
+      "service-desc": [
+        {
+          "href": "https://demo.mapserver.org/cgi-bin/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetCapabilities",
+          "title": "This demonstration server showcases MapServer (www.mapserver.org) and its OGC support",
+          "type": "text/xml"
+        }
+      ]
+    },
+    {
+      "anchor": "https://demo.mapserver.org/cgi-bin/wcs?",
+      "meta": {
+        "name": "MapServer WCS",
+        "type": "WCS"
+      },
+      "service-desc": [
+        {
+          "href": "https://demo.mapserver.org/cgi-bin/wcs?SERVICE=WCS&VERSION=1.0.0&REQUEST=GetCapabilities",
+          "title": "WCS Demo Server for MapServer",
+          "type": "text/xml"
+        }
+      ]
+    },
+    {
+      "anchor": "https://demo.mapserver.org/cgi-bin/mapserv/localdemo/ogcapi",
+      "meta": {
+        "name": "localdemo",
+        "type": "OAPIF"
+      },
+      "service-desc": [
+        {
+          "href": "https://demo.mapserver.org/cgi-bin/mapserv/localdemo/ogcapi/api?f=json",
+          "title": "MS4W Demo OGCAPI Server",
+          "type": "application/json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://demo.mapserver.org/cgi-bin/mapserv/localdemo/ogcapi/api?f=html",
+          "title": "MS4W Demo OGCAPI Server",
+          "type": "text/html"
+        }
+      ]
+    }
+  ]
+}
