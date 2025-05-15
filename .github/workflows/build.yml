@@ -12,8 +12,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Cache vcpkg
+        uses: actions/cache@v4
+        with:
+          path: |
+            vcpkg
+          key: ${{ runner.os }}-vcpkg-cache
+
       # Install vcpkg and dependencies
       - name: Setup vcpkg
+        if: steps.cache.outputs.cache-hit != 'true'
         shell: pwsh
         run: |
           Invoke-WebRequest -Uri "https://github.com/microsoft/vcpkg/archive/refs/heads/master.zip" -OutFile "vcpkg.zip"
@@ -35,6 +43,7 @@ jobs:
         run: |
           mkdir build
           cd build
+          mkdir output
           cmake .. -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT\scripts\buildsystems\vcpkg.cmake" -A x64
           cmake --build . --config Debug
 
@@ -43,12 +52,12 @@ jobs:
         shell: pwsh
         run: |
           cd build
-          .\Debug\mapserver-templates.exe ../template.inja ../data.json > ../output.html
+          .\Debug\mapserver-templates.exe ../template.inja ../data.json > ./output/output.html
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./  # Publish from root (output.html must be here)
+          publish_dir: ./build/output  # Deploy ONLY this folder
           keep_files: false  # Overwrite existing files
