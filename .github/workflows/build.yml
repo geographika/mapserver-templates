@@ -26,7 +26,8 @@ jobs:
       - name: Install dependencies (inja and nlohmann-json)
         shell: pwsh
         run: |
-          .\vcpkg\vcpkg install inja nlohmann-json
+          # this uses the vcpkg.json file in the root of the repository
+          .\vcpkg\vcpkg install
 
       # Configure and build the project (assuming CMake)
       - name: Configure and Build
