@@ -34,3 +34,24 @@ cd D:\GitHub\mapserver-templates
 # debug program add following to 
 # template.inja data.json > output.html
 # mapserver-index/landing.html mapserver-index/data.json
+
+
+C:\Python313\python -m http.server -d D:\GitHub\mapserver-templates\isric
+http://localhost:8000/test2.html
+
+
+## CMake Build
+
+```
+cd D:\GitHub\mapserver-templates
+Remove-Item -Recurse -Force build
+mkdir build
+cd build
+
+$env:PATH="D:/Tools/cmake-3.22.3-windows-x86_64/bin;" + $env:PATH
+# $env:VCPKG_ROOT="D:/GitHub/vcpkg"
+cmake .. -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" -A x64
+cmake --build . --config Debug
+
+.\Debug\mapserver-templates.exe ../template.inja ../data.json
+```

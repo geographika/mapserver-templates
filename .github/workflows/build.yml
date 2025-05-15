@@ -1,0 +1,53 @@
+name: Build and Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]  # Trigger on pushes to main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: windows-latest  # Windows runner
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Install vcpkg and dependencies
+      - name: Setup vcpkg
+        shell: pwsh
+        run: |
+          Invoke-WebRequest -Uri "https://github.com/microsoft/vcpkg/archive/refs/heads/master.zip" -OutFile "vcpkg.zip"
+          Expand-Archive -Path "vcpkg.zip" -DestinationPath .
+          Rename-Item -Path "vcpkg-master" -NewName "vcpkg"
+          .\vcpkg\bootstrap-vcpkg.bat -disableMetrics
+          echo "VCPKG_ROOT=$pwd\vcpkg" | Out-File -FilePath $env:GITHUB_ENV -Append
+          echo "$pwd\vcpkg" | Out-File -FilePath $env:GITHUB_PATH -Append
+
+      - name: Install dependencies (inja and nlohmann-json)
+        shell: pwsh
+        run: |
+          .\vcpkg\vcpkg install inja nlohmann-json
+
+      # Configure and build the project (assuming CMake)
+      - name: Configure and Build
+        shell: pwsh
+        run: |
+          mkdir build
+          cd build
+          cmake .. -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT\scripts\buildsystems\vcpkg.cmake" -A x64
+          cmake --build . --config Debug
+
+      # Run the executable to generate output.html
+      - name: Generate output.html
+        shell: pwsh
+        run: |
+          cd build
+          .\Debug\mapserver-templates.exe ../template.inja ../data.json > ../output.html
+
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./  # Publish from root (output.html must be here)
+          keep_files: false  # Overwrite existing files

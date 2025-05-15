@@ -1,0 +1,8 @@
+{
+  "name": "mapserver-templates",
+  "version": "1.0",
+  "dependencies": [
+    "inja",
+    "nlohmann-json"
+  ]
+}

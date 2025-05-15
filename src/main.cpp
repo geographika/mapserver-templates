@@ -4,6 +4,10 @@
 #include <fstream>
 #include <sstream>
 #include <iostream>
+#include <set>
+#include <vector>
+#include <string>
+
 
 int main(int argc, char* argv[]) {
     if (argc != 3) {
@@ -14,9 +18,7 @@ int main(int argc, char* argv[]) {
     std::filesystem::path template_path(argv[1]);
     std::filesystem::path json_path(argv[2]);
 
-    // Set environment with template directory
-    // inja::Environment env(template_path.parent_path().string());
-
+    // set environment with template directory
     // ensure trailing separator for the env path, otherwise:
     // Unexpected error : [inja.exception.file_error] failed accessing file at 'mapserver-indexheader.html'
     std::string template_dir = template_path.parent_path().string();
@@ -51,6 +53,20 @@ int main(int argc, char* argv[]) {
         std::cerr << "Error parsing JSON: " << e.what() << "\n";
         return 1;
     }
+
+    // Collect unique meta.name values
+    std::set<std::string> unique_names;
+    for (const auto& item : data["linkset"]) {
+        if (item.contains("meta") && item["meta"].contains("name")) {
+            unique_names.insert(item["meta"]["name"].get<std::string>());
+        }
+    }
+
+    // Move into a sorted vector if needed
+    std::vector<std::string> sorted_names(unique_names.begin(), unique_names.end());
+
+    // Add to template context
+    data["unique_names"] = sorted_names;
 
     // Render with error handling
     try {

@@ -31,3 +31,18 @@ title - take from WMS/WCS title etc.
 
 
 Lots of different versions of WMS etc. list all if they are available?
+
+
+## OpenLayers Links
+
+https://demo.mapserver.org/cgi-bin/wms_landsat?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities
+
+https://maps.isric.org/mapserv?map=/map/gyga.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-40,-50,55,15&CRS=EPSG:4326&WIDTH=1426&HEIGHT=895&LAYERS=gyga_af_agg_erzd_crfvol__m_1km&STYLES=&FORMAT=application/openlayers
+
+https://demo.mapserver.org/cgi-bin/wms_landsat?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=4096&HEIGHT=4096&LAYERS=WMS_server&STYLES=&FORMAT=application/openlayers
+
+# not sure how to get layer name
+https://demo.mapserver.org/cgi-bin/wms_landsat?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=4096&HEIGHT=4096&LAYERS=lunenburg&STYLES=&FORMAT=application/openlayers
+
+
+https://demo.mapserver.org/cgi-bin/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=4096&HEIGHT=4096&LAYERS=WMS_server&STYLES=&FORMAT=application/openlayers

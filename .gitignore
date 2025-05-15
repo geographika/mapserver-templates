@@ -32,3 +32,6 @@
 *.app
 
 .vs
+build
+mapserve.23c20c22
+vcpkg_installed
