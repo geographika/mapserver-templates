@@ -53,6 +53,7 @@ jobs:
           cd build
           mkdir output
           .\Debug\mapserver-templates.exe ../template.inja ../data.json > ./output/output.html
+          .\Debug\mapserver-templates.exe ../isric/landing.html ../isric/data.json > ./output/isric.html
           cd output
           ls
 
