@@ -35,3 +35,7 @@
 build
 mapserve.23c20c22
 vcpkg_installed
+/mapserver-templates.sln
+/mapserver-templates.vcxproj.filters
+/mapserver-templates.vcxproj.user
+/x64/Debug/mapserver-templates.pdb

@@ -137,8 +137,6 @@
   <ItemGroup>
     <None Include=".github\workflows\build.yml" />
     <None Include=".gitignore" />
-    <None Include="ApiCatalog.md" />
-    <None Include="data.json" />
     <None Include="isric\app.css" />
     <None Include="isric\data.json" />
     <None Include="isric\example.html" />
@@ -147,6 +145,14 @@
     <None Include="isric\maps.html" />
     <None Include="isric\notes.md" />
     <None Include="isric\test.html" />
+    <None Include="json.md" />
+    <None Include="mapfiles\data\ne_110m_coastline.fgb" />
+    <None Include="mapfiles\template.html" />
+    <None Include="mapfiles\wfs.map" />
+    <None Include="mapfiles\wms.map" />
+    <None Include="mapfiles\data\ne_110m_land.fgb" />
+    <None Include="mapfiles\mapserver.conf" />
+    <None Include="mapfiles\readme.md" />
     <None Include="mapserver-index\data.json" />
     <None Include="mapserver-index\header.html" />
     <None Include="mapserver-index\landing.html" />

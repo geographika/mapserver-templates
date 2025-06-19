@@ -1,0 +1,144 @@
+{
+  "linkset": [
+    {
+      // this is the root URL for the MapServer instance
+      "anchor": "http://localhost:8080/",
+      // the api-catalog is an array of all Mapfiles stored in the MapServer CONFIG file
+      "api-catalog": [
+        {
+          "href": "http://localhost:8080/wms", // the root URL plus key from the CONFIG file
+          "name": "WMS_DEMO" // the NAME from the Mapfile
+        },
+        {
+          "href": "http://localhost:8080/wfs",
+          "name": "WFS_DEMO"
+        },
+        {
+          "href": "http://localhost:8080/wcs",
+          "name": "WCS_DEMO"
+        },
+        {
+          "href": "http://localhost:8080/oapif",
+          "name": "OAPIF_DEMO"
+        },
+        {
+          "href": "http://localhost:8080/kitchensink",
+          "name": "KitchenSink"
+        }
+      ]
+    },
+    {
+      "anchor": "http://localhost:8080/wms", // this matches the href from the api-catalog
+      "service-desc": [
+        {
+          // the URL to the WMS GetCapabilties request - will only be listed if wms_enable_request GetCapabilities
+          // is enabled (or "ows_enable_request" "*"
+          "href": "http://localhost:8080/wms/?version=1.0.0&request=GetCapabilities&service=WMS",
+          // the MAP NAME
+          "name": "WMS_DEMO",
+          // the wms_title (or ows_title)
+          "title": "MapServer WMS Demo Map",
+          // hard-coded MIME type of the response
+          "type": "text/xml", // or text/xml; charset=UTF-8
+          // a hard-coded type to allow grouping or filtering or URLs in a template
+          "service": "WMS",
+          // a hard-coded description for WMS GetCapabilities
+          "description": "The GetCapabilities URL for version 1.0.0"
+        },
+        {
+          "href": "http://localhost:8080/wms/?version=1.0.7&request=GetCapabilities&service=WMS",
+          "name": "WMS_DEMO",
+          "title": "MapServer WMS Demo Map",
+          "service": "WMS",
+          "description": "The WMS GetCapabilities URL for version 1.0.7"
+        },
+        {
+          "href": "http://localhost:8080/wms/?version=1.1.0&request=GetCapabilities&service=WMS",
+          "name": "WMS_DEMO",
+          "service": "MapServer WMS Demo Map",
+          "description": "The WMS GetCapabilities URL for version 1.1.0"
+        },
+        {
+          "href": "http://localhost:8080/wms/?version=1.1.1&request=GetCapabilities&service=WMS",
+          "name": "WMS_DEMO",
+          "title": "MapServer WMS Demo Map",
+          "service": "WMS",
+          "description": "The WMS GetCapabilities URL for version 1.1.1"
+        },
+        {
+          "href": "http://localhost:8080/wms/?version=1.3.0&request=GetCapabilities&service=WMS",
+          "name": "WMS_DEMO",
+          "title": "MapServer WMS Demo Map",
+          "service": "WMS",
+          "description": "The WMS GetCapabilities URL for version 1.3.0"
+        }
+      ]
+    },
+    {
+      "anchor": "http://localhost:8080/wfs",
+      "service-desc": [
+        {
+          "href": "http://localhost:8080/wfs/?version=1.0.0&request=GetCapabilities&service=WFS",
+          "name": "WFS_DEMO",
+          "title": "MapServer WFS Demo Map",
+          "service": "WFS",
+          "description": "The WFS GetCapabilities URL for version 1.1.1"
+        },
+        {
+          "href": "http://localhost:8080/wfs/?version=1.1.0&request=GetCapabilities&service=WFS",
+          "name": "WFS version 1.1.0",
+          "title": "MapServer WFS Demo Map",
+          "service": "WFS",
+          "description": "The WFS GetCapabilities URL for version 1.1.0"
+        },
+        {
+          "href": "http://localhost:8080/wfs/?version=2.0.0&request=GetCapabilities&service=WFS",
+          "name": "WFS version 2.0.0",
+          "title": "MapServer WFS Demo Map",
+          "service": "WFS",
+          "description": "The WFS GetCapabilities URL for version 2.0.0"
+        }
+      ]
+    },
+    {
+      "anchor": "http://localhost:8080/wcs",
+      "service-desc": [
+        {
+          "href": "http://localhost:8080/wcs/?SERVICE=WCS&VERSION=1.0.0&REQUEST=GetCapabilities",
+          "name": "WCS version 1.0.0",
+          "description": "This is a WCS GetCapabilities URL for version 1.0.0"
+        },
+        {
+          "href": "http://localhost:8080/wcs/?SERVICE=WCS&VERSION=1.1.0&REQUEST=GetCapabilities",
+          "name": "WCS version 1.1.0",
+          "description": "This is a WCS GetCapabilities URL for version 1.1.0"
+        },
+        {
+          "href": "http://localhost:8080/wcs/?SERVICE=WCS&VERSION=2.0.0&REQUEST=GetCapabilities",
+          "name": "WCS version 2.0.0",
+          "description": "This is a WCS GetCapabilities URL for version 2.0.0"
+        }
+      ]
+    },
+    {
+      "anchor": "http://localhost:8080/kitchensink",
+      "service-desc": [
+        {
+          "href": "http://localhost:8080/wms/?version=1.3.0&request=GetCapabilities&service=WMS",
+          "name": "KitchenSink WMS",
+          "description": "Combined WMS service in KitchenSink"
+        },
+        {
+          "href": "http://localhost:8080/wfs/?version=2.0.0&request=GetCapabilities&service=WFS",
+          "name": "KitchenSink WFS",
+          "description": "Combined WFS service in KitchenSink"
+        },
+        {
+          "href": "http://localhost:8080/wcs/?SERVICE=WCS&VERSION=2.0.0&REQUEST=GetCapabilities",
+          "name": "KitchenSink WCS",
+          "description": "Combined WCS service in KitchenSink"
+        }
+      ]
+    }
+  ]
+}

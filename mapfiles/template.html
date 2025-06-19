@@ -1,0 +1,29 @@
+<!-- mapserver template -->
+<!-- see https://mapserver.org/mapfile/template.html#template -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MapServer Template</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 2em;
+        }
+
+        img {
+            display: block;
+            margin: 1em 0;
+            border: 2px solid #ccc;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>MapServer Template</h1>
+    <img src="[img]" alt="Map">
+    <img src="[scalebar]" alt="Legend">
+    <b>[date]</b>
+</body>
+</html>
