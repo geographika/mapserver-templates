@@ -1,5 +1,7 @@
 # Proposed JSON Structure
 
+The proposed JSON structure is shown below. 
+
 ```json
 {
   "linkset": [
@@ -30,11 +32,9 @@ Benefits of the index page include:
 - It allows sysadmins to see all accessible MapServer end-points - and help securing them or disabling them if not required
 - It allows users to see all available services and their capabilities
 
-- `anchor` - this will use the 
+- `anchor` - this will use the appropriate online resource URL
 - `title` - this will use "wms_title" for WMS, "wfs_title" for WFS etc.
 - `type` - this is the mime type the href will return
-
-
 
 ## Design Questions
 
@@ -65,7 +65,7 @@ I am still unclear on the difference between the API Catalog and Linkset.
 I have based the JSON structure on the
 PyGeoAPI API Catalog approach added in https://github.com/geopython/demo.pygeoapi.io/pull/60/files. This however appears to return a linkset.
 
-```
+```python
 @app.route('/api-catalog.json')
 @app.route('/.well-known/api-catalog')
 ```
@@ -110,3 +110,5 @@ Not sure how to get layer names. Maybe just use the map name?
 
 - https://demo.mapserver.org/cgi-bin/wms_landsat?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=4096&HEIGHT=4096&LAYERS=lunenburg&STYLES=&FORMAT=application/openlayers
 - https://demo.mapserver.org/cgi-bin/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=4096&HEIGHT=4096&LAYERS=WMS_server&STYLES=&FORMAT=application/openlayers
+
+
