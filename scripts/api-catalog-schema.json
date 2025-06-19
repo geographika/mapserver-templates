@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Linkset with service-desc and service-doc",
+  "type": "object",
+  "properties": {
+    "linkset": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "anchor": {
+            "type": "string",
+            "format": "uri"
+          },
+          "service-desc": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/linkObject"
+            }
+          },
+          "service-doc": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/linkObject"
+            }
+          }
+        },
+        "required": [ "anchor", "service-desc" ],
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": [ "linkset" ],
+  "additionalProperties": false,
+  "$defs": {
+    "linkObject": {
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string",
+          "format": "uri"
+        },
+        "title": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "required": [ "href", "title", "type" ],
+      "additionalProperties": false
+    }
+  }
+}

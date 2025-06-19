@@ -1,3 +1,5 @@
-./x64/Debug/mapserver-templates.exe isric/landing.html isric/data.json
+cd D:\GitHub\mapserver-templates
 
-./x64/Debug/mapserver-templates.exe isric/landing.html isric/data.json > isric/output.html
+./build/Debug/mapserver-templates.exe isric/landing.html isric/data.json
+
+./build/Debug/mapserver-templates.exe isric/landing.html isric/data.json > isric/output.html
