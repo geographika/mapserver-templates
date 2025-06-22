@@ -72,10 +72,3 @@ cd D:\GitHub\mapserver-templates
 # template.inja data.json > output.html
 # mapserver-index/landing.html mapserver-index/data.json
 ```
-
-Viewing HTML output:
-
-```ps1
-C:\Python313\python -m http.server -d D:\GitHub\mapserver-templates\isric
-# http://localhost:8000/test.html
-```
