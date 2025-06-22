@@ -135,27 +135,33 @@
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\Data\ISRIC\ocs.sld" />
     <None Include=".github\workflows\build.yml" />
     <None Include=".gitignore" />
     <None Include="isric\app.css" />
-    <None Include="isric\data.json" />
     <None Include="isric\example.html" />
     <None Include="isric\landing.html" />
     <None Include="isric\logo_isric.svg" />
     <None Include="isric\maps.html" />
-    <None Include="isric\notes.md" />
+    <None Include="isric\readme.md" />
     <None Include="isric\test.html" />
     <None Include="json.md" />
+    <None Include="mapfiles\api-catalog.commented.json" />
+    <None Include="mapfiles\api-catalog.json" />
     <None Include="mapfiles\data\ne_110m_coastline.fgb" />
+    <None Include="mapfiles\data\ocs.sld" />
+    <None Include="mapfiles\oapif.map" />
     <None Include="mapfiles\template.html" />
+    <None Include="mapfiles\wcs.map" />
     <None Include="mapfiles\wfs.map" />
     <None Include="mapfiles\wms.map" />
     <None Include="mapfiles\data\ne_110m_land.fgb" />
     <None Include="mapfiles\mapserver.conf" />
     <None Include="mapfiles\readme.md" />
-    <None Include="mapserver-index\data.json" />
     <None Include="mapserver-index\header.html" />
     <None Include="mapserver-index\landing.html" />
+    <None Include="mapserver-index\output.html" />
+    <None Include="mapserver-index\readme.md" />
     <None Include="ProposedJson.md" />
     <None Include="ReadMe.md" />
     <None Include="scripts\api-catalog-schema.json" />
@@ -165,6 +171,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="isric\favicon.ico" />
+    <Image Include="mapfiles\data\crop_4326_ocs_0-30cm_mean_subset.tif" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />

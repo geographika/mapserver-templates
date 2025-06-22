@@ -16,7 +16,7 @@
                   "title": "MapServer WMS Demo Map",
                   "type": "text/xml",
                   "service": "WMS",
-                  "description": "The GetCapabilities URL for version 1.0.0"
+                  "description": "WMS GetCapabilities URL (version 1.0.0)"
                 },
                 {
                   "href": "http://localhost:8080/wms/?version=1.0.7&request=GetCapabilities&service=WMS",
@@ -24,7 +24,7 @@
                   "title": "MapServer WMS Demo Map",
                   "type": "text/xml",
                   "service": "WMS",
-                  "description": "The WMS GetCapabilities URL for version 1.0.7"
+                  "description": "WMS GetCapabilities URL (version 1.0.7)"
                 },
                 {
                   "href": "http://localhost:8080/wms/?version=1.1.0&request=GetCapabilities&service=WMS",
@@ -32,7 +32,7 @@
                   "title": "MapServer WMS Demo Map",
                   "type": "text/xml",
                   "service": "WMS",
-                  "description": "The WMS GetCapabilities URL for version 1.1.0"
+                  "description": "WMS GetCapabilities URL (version 1.1.0)"
                 },
                 {
                   "href": "http://localhost:8080/wms/?version=1.1.1&request=GetCapabilities&service=WMS",
@@ -40,7 +40,7 @@
                   "title": "MapServer WMS Demo Map",
                   "type": "text/xml",
                   "service": "WMS",
-                  "description": "The WMS GetCapabilities URL for version 1.1.1"
+                  "description": "WMS GetCapabilities URL (version 1.1.1)"
                 },
                 {
                   "href": "http://localhost:8080/wms/?version=1.3.0&request=GetCapabilities&service=WMS",
@@ -48,7 +48,7 @@
                   "title": "MapServer WMS Demo Map",
                   "type": "text/xml",
                   "service": "WMS",
-                  "description": "The WMS GetCapabilities URL for version 1.3.0"
+                  "description": "WMS GetCapabilities URL (version 1.3.0)"
                 }
               ]
             }
@@ -67,7 +67,7 @@
                   "title": "MapServer WFS Demo Map",
                   "type": "text/xml",
                   "service": "WFS",
-                  "description": "The WFS GetCapabilities URL for version 1.0.0"
+                  "description": "WFS GetCapabilities URL (version 1.0.0)"
                 },
                 {
                   "href": "http://localhost:8080/wfs/?version=1.1.0&request=GetCapabilities&service=WFS",
@@ -75,7 +75,7 @@
                   "title": "MapServer WFS Demo Map",
                   "type": "text/xml",
                   "service": "WFS",
-                  "description": "The WFS GetCapabilities URL for version 1.1.0"
+                  "description": "WFS GetCapabilities URL (version 1.1.0)"
                 },
                 {
                   "href": "http://localhost:8080/wfs/?version=2.0.0&request=GetCapabilities&service=WFS",
@@ -83,7 +83,7 @@
                   "title": "MapServer WFS Demo Map",
                   "type": "text/xml",
                   "service": "WFS",
-                  "description": "The WFS GetCapabilities URL for version 2.0.0"
+                  "description": "WFS GetCapabilities URL (version 2.0.0)"
                 }
               ]
             }
@@ -102,7 +102,7 @@
                   "title": "MapServer WCS Demo Map",
                   "type": "text/xml",
                   "service": "WCS",
-                  "description": "This is a WCS GetCapabilities URL for version 1.0.0"
+                  "description": "WCS GetCapabilities URL (version 1.0.0)"
                 },
                 {
                   "href": "http://localhost:8080/wcs/?SERVICE=WCS&VERSION=1.1.0&REQUEST=GetCapabilities",
@@ -110,7 +110,7 @@
                   "title": "MapServer WCS Demo Map",
                   "type": "text/xml",
                   "service": "WCS",
-                  "description": "This is a WCS GetCapabilities URL for version 1.1.0"
+                  "description": "WCS GetCapabilities URL (version 1.1.0)"
                 },
                 {
                   "href": "http://localhost:8080/wcs/?SERVICE=WCS&VERSION=2.0.0&REQUEST=GetCapabilities",
@@ -118,7 +118,7 @@
                   "title": "MapServer WCS Demo Map",
                   "type": "text/xml",
                   "service": "WCS",
-                  "description": "This is a WCS GetCapabilities URL for version 2.0.0"
+                  "description": "WCS GetCapabilities URL (version 2.0.0)"
                 }
               ]
             }

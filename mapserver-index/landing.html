@@ -1,11 +1,16 @@
 {% include "header.html" -%}
 <h1>MapServer Services</h1>
+    {%- for service in linkset.0.api-catalog %}
+
+<h2>{{ service.name }}</h2>
 <ul>
-    {% for link in linkset -%}
-    {% for desc in link.service-desc -%}
-    <li>{{ desc.title }}</li>
-    {% endfor -%}
-    {% endfor -%}
+{%- for svcLinkset in service.linkset %}
+{%- for desc in svcLinkset.service-desc %}
+<li><a href="{desc.href}">{{ desc.description }}</a></li>
+{% endfor -%}
+{% endfor -%}
 </ul>
+<br />
+{% endfor -%}
 </body>
 </html>

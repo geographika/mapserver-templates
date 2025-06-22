@@ -54,20 +54,6 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    // Collect unique meta.name values
-    std::set<std::string> unique_names;
-    for (const auto& item : data["linkset"]) {
-        if (item.contains("meta") && item["meta"].contains("name")) {
-            unique_names.insert(item["meta"]["name"].get<std::string>());
-        }
-    }
-
-    // Move into a sorted vector if needed
-    std::vector<std::string> sorted_names(unique_names.begin(), unique_names.end());
-
-    // Add to template context
-    data["unique_names"] = sorted_names;
-
     // Render with error handling
     try {
         std::string result = env.render(template_string, data);
