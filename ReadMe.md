@@ -63,12 +63,12 @@ cd D:\GitHub\mapserver-templates
 
 ./build/Debug/mapserver-templates.exe template.inja data.json
 
-./build/Debug/mapserver-templates.exe ./mapserver-index/landing.html ./mapserver-index/data.json
+./build/Debug/mapserver-templates.exe ./mapserver-index/landing.html ./mapfiles/api-catalog.json
 
 # pipe to file
 ./build/Debug/mapserver-templates.exe template.inja data.json > output.html
 
 # debug program add following to 
 # template.inja data.json > output.html
-# mapserver-index/landing.html mapserver-index/data.json
+# mapserver-index/landing.html mapfiles/api-catalog.json
 ```
