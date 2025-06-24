@@ -44,7 +44,8 @@ cd D:\GitHub\mapserver-templates\mapfiles
 docker run -it --rm `
   -v ${PWD}:/etc/mapserver/:ro `
   -p 8080:80 `
-  compass/compass-mapserver:8.4.0-full
+  -e MAPSERVER_CONFIG_FILE=/etc/mapserver/mapserver.conf `
+  camptocamp/mapserver:8.4-gdal3.10
 
 ```
 
@@ -93,12 +94,13 @@ msOWSDispatch(): SOS server error. SERVICE=SOS requested, but SOS support not co
 
 ## CGI Services
 
-http://localhost:8080/wms/?mode=map&layer=WMS Demo # no output
-# Version 4.4 and above: passing ‘LAYERS=all’ will automatically turn on all layers.
-http://localhost:8080/wms/?mode=map&layers=all # would need a layer name
+http://localhost:8080/cgi/?mode=map
 
-http://localhost:8080/wms/?mode=legend # note classes need a name to display
-http://localhost:8080/wms/?mode=legend&layers=all
+# Version 4.4 and above: passing ‘LAYERS=all’ will automatically turn on all layers.
+http://localhost:8080/cgi/?mode=map&layers=all # would need a layer name
+
+http://localhost:8080/cgi/?mode=legend # note classes need a name to display
+http://localhost:8080/cgi/?mode=legend&layers=all
 
 ## OGC Services
 

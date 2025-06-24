@@ -45,7 +45,7 @@ jobs:
           cd build
           mkdir output
           .\Debug\mapserver-templates.exe ../mapserver-index/landing.html ../mapserver-index/data.json > ./output/output.html
-          .\Debug\mapserver-templates.exe ../isric/landing.html ../isric/data.json > ./output/index.html
+          .\Debug\mapserver-templates.exe ../isric/landing.html ../mapfiles/api-catalog.json > ./output/index.html
           Copy-Item -Path "../isric/*" -Destination "./output" -Recurse -Force
 
       # Deploy to GitHub Pages

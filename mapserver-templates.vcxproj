@@ -139,12 +139,10 @@
     <None Include=".github\workflows\build.yml" />
     <None Include=".gitignore" />
     <None Include="isric\app.css" />
-    <None Include="isric\example.html" />
     <None Include="isric\landing.html" />
     <None Include="isric\logo_isric.svg" />
     <None Include="isric\maps.html" />
     <None Include="isric\readme.md" />
-    <None Include="isric\test.html" />
     <None Include="json.md" />
     <None Include="mapfiles\api-catalog.commented.json" />
     <None Include="mapfiles\api-catalog.json" />
