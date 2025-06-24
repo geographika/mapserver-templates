@@ -13,6 +13,11 @@ A test application was created to more easily
   - [validate.py](/scripts/validate.py) - a Python script for validating output against the JSON schema
 - [isric](/isric/) - a more advanced template for [ISRIC](https://www.isric.org/).
 
+Example template outputs:
+
+- [Plain example](https://geographika.github.io/mapserver-templates/output.html)
+- [ISRIC example](https://geographika.github.io/mapserver-templates/)
+
 ## Test Application Build Steps
 
 First clone [vcpkg](https://github.com/microsoft/vcpkg) and use this to get dependencies.

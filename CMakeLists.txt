@@ -30,5 +30,5 @@ add_executable(mapserver-templates src/main.cpp)
 target_link_libraries(mapserver-templates PRIVATE pantor::inja nlohmann_json::nlohmann_json)
 
 # Copy template/data files to build directory (optional)
-configure_file(template.inja ${CMAKE_CURRENT_BINARY_DIR}/template.inja COPYONLY)
-configure_file(data.json ${CMAKE_CURRENT_BINARY_DIR}/data.json COPYONLY)
+# configure_file(template.inja ${CMAKE_CURRENT_BINARY_DIR}/template.inja COPYONLY)
+# configure_file(data.json ${CMAKE_CURRENT_BINARY_DIR}/data.json COPYONLY)
