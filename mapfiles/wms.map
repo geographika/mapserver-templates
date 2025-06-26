@@ -13,6 +13,7 @@ MAP
             "wms_srs" "EPSG:4326"
             "wms_title" "MapServer WMS Demo Map"
             # wms_onlineresource not working with OpenLayers requests!
+            # fixed with https://github.com/MapServer/MapServer/pull/7297
             "ows_onlineresource" "http://localhost:8080/wms/?"
         END
         #TEMPLATE "template.html" # required for http://localhost:8080/wms/?mode=browse&layers=all

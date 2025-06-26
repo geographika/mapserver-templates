@@ -1,6 +1,6 @@
 ﻿# MapServer Templates
 
-This repository is used to store notes and tests related to [MS RFC 140: MapServer Homepage¶](https://mapserver.org/development/rfc/ms-rfc-140.html).
+This repository is used to store notes and tests related to [MS RFC 140: MapServer Homepage](https://mapserver.org/development/rfc/ms-rfc-140.html).
 
 A test application was created to more easily 
 
