@@ -1,190 +1,87 @@
 {
   "linkset": [
     {
-      "anchor": "http://localhost:8080/",
-      "api-catalog": [
+      "anchor": "http://localhost:8080/wmsdemo",
+      "service-desc": [
         {
-          "href": "http://localhost:8080/wms",
-          "name": "WMS_DEMO",
-          "linkset": [
-            {
-              "anchor": "http://localhost:8080/wms",
-              "service-desc": [
-                {
-                  "href": "http://localhost:8080/wms/?version=1.0.0&request=GetCapabilities&service=WMS",
-                  "name": "WMS_DEMO",
-                  "title": "MapServer WMS Demo Map",
-                  "type": "text/xml",
-                  "service": "WMS",
-                  "description": "WMS GetCapabilities URL (version 1.0.0)"
-                },
-                {
-                  "href": "http://localhost:8080/wms/?version=1.0.7&request=GetCapabilities&service=WMS",
-                  "name": "WMS_DEMO",
-                  "title": "MapServer WMS Demo Map",
-                  "type": "text/xml",
-                  "service": "WMS",
-                  "description": "WMS GetCapabilities URL (version 1.0.7)"
-                },
-                {
-                  "href": "http://localhost:8080/wms/?version=1.1.0&request=GetCapabilities&service=WMS",
-                  "name": "WMS_DEMO",
-                  "title": "MapServer WMS Demo Map",
-                  "type": "text/xml",
-                  "service": "WMS",
-                  "description": "WMS GetCapabilities URL (version 1.1.0)"
-                },
-                {
-                  "href": "http://localhost:8080/wms/?version=1.1.1&request=GetCapabilities&service=WMS",
-                  "name": "WMS_DEMO",
-                  "title": "MapServer WMS Demo Map",
-                  "type": "text/xml",
-                  "service": "WMS",
-                  "description": "WMS GetCapabilities URL (version 1.1.1)"
-                },
-                {
-                  "href": "http://localhost:8080/wms/?version=1.3.0&request=GetCapabilities&service=WMS",
-                  "name": "WMS_DEMO",
-                  "title": "MapServer WMS Demo Map",
-                  "type": "text/xml",
-                  "service": "WMS",
-                  "description": "WMS GetCapabilities URL (version 1.3.0)"
-                }
-              ]
-            }
-          ]
-        },
+          "href": "http://localhost:8080/wmsdemo?f=json",
+          "title": "WMS Demo Mapfile (JSON)",
+          "type": "application/vnd.oai.openapi+json"
+        }
+      ],
+      "service-doc": [
         {
-          "href": "http://localhost:8080/wfs",
-          "name": "WFS_DEMO",
-          "linkset": [
-            {
-              "anchor": "http://localhost:8080/wfs",
-              "service-desc": [
-                {
-                  "href": "http://localhost:8080/wfs/?version=1.0.0&request=GetCapabilities&service=WFS",
-                  "name": "WFS_DEMO",
-                  "title": "MapServer WFS Demo Map",
-                  "type": "text/xml",
-                  "service": "WFS",
-                  "description": "WFS GetCapabilities URL (version 1.0.0)"
-                },
-                {
-                  "href": "http://localhost:8080/wfs/?version=1.1.0&request=GetCapabilities&service=WFS",
-                  "name": "WFS_DEMO",
-                  "title": "MapServer WFS Demo Map",
-                  "type": "text/xml",
-                  "service": "WFS",
-                  "description": "WFS GetCapabilities URL (version 1.1.0)"
-                },
-                {
-                  "href": "http://localhost:8080/wfs/?version=2.0.0&request=GetCapabilities&service=WFS",
-                  "name": "WFS_DEMO",
-                  "title": "MapServer WFS Demo Map",
-                  "type": "text/xml",
-                  "service": "WFS",
-                  "description": "WFS GetCapabilities URL (version 2.0.0)"
-                }
-              ]
-            }
-          ]
-        },
+          "href": "http://localhost:8080/wmsdemo?f=html",
+          "title": "WMS Demo Mapfile (HTML)",
+          "type": "text/html"
+        }
+      ]
+    },
+    {
+      "anchor": "http://localhost:8080/wfsdemo",
+      "service-desc": [
         {
-          "href": "http://localhost:8080/wcs",
-          "name": "WCS_DEMO",
-          "linkset": [
-            {
-              "anchor": "http://localhost:8080/wcs",
-              "service-desc": [
-                {
-                  "href": "http://localhost:8080/wcs/?SERVICE=WCS&VERSION=1.0.0&REQUEST=GetCapabilities",
-                  "name": "WCS_DEMO",
-                  "title": "MapServer WCS Demo Map",
-                  "type": "text/xml",
-                  "service": "WCS",
-                  "description": "WCS GetCapabilities URL (version 1.0.0)"
-                },
-                {
-                  "href": "http://localhost:8080/wcs/?SERVICE=WCS&VERSION=1.1.0&REQUEST=GetCapabilities",
-                  "name": "WCS_DEMO",
-                  "title": "MapServer WCS Demo Map",
-                  "type": "text/xml",
-                  "service": "WCS",
-                  "description": "WCS GetCapabilities URL (version 1.1.0)"
-                },
-                {
-                  "href": "http://localhost:8080/wcs/?SERVICE=WCS&VERSION=2.0.0&REQUEST=GetCapabilities",
-                  "name": "WCS_DEMO",
-                  "title": "MapServer WCS Demo Map",
-                  "type": "text/xml",
-                  "service": "WCS",
-                  "description": "WCS GetCapabilities URL (version 2.0.0)"
-                }
-              ]
-            }
-          ]
-        },
+          "href": "http://localhost:8080/wfsdemo?f=json",
+          "title": "WFS Demo Mapfile (JSON)",
+          "type": "application/vnd.oai.openapi+json"
+        }
+      ],
+      "service-doc": [
         {
-          "href": "http://localhost:8080/oapif",
-          "name": "OAPIF_DEMO",
-          "linkset": [
-            {
-              "anchor": "http://localhost:8080/oapif",
-              "service-desc": [
-                {
-                  "href": "http://localhost:8080/oapif/ogcapi/?f=json",
-                  "name": "OAPIF_DEMO",
-                  "title": "MapServer OGC Features API Demo Map",
-                  "type": "application/json",
-                  "service": "OAPIF",
-                  "description": "This is the JSON homepage for the OGC Features API"
-                },
-                {
-                  "href": "http://localhost:8080/oapif/ogcapi/",
-                  "name": "OAPIF_DEMO",
-                  "title": "MapServer OGC Features API Demo Map",
-                  "type": "application/json",
-                  "service": "OAPIF",
-                  "description": "This is the HTML homepage for the OGC Features API"
-                }
-              ]
-            }
-          ]
-        },
+          "href": "http://localhost:8080/wfsdemo?f=html",
+          "title": "WFS Demo Mapfile (HTML)",
+          "type": "text/html"
+        }
+      ]
+    },
+    {
+      "anchor": "http://localhost:8080/wcsdemo",
+      "service-desc": [
         {
-          "href": "http://localhost:8080/kitchensink",
-          "name": "KitchenSink",
-          "linkset": [
-            {
-              "anchor": "http://localhost:8080/kitchensink",
-              "service-desc": [
-                {
-                  "href": "http://localhost:8080/wms/?version=1.3.0&request=GetCapabilities&service=WMS",
-                  "name": "WMS_DEMO",
-                  "title": "MapServer WMS Demo Map",
-                  "type": "text/xml",
-                  "service": "WMS",
-                  "description": "The WMS GetCapabilities URL for version 1.3.0"
-                },
-                {
-                  "href": "http://localhost:8080/wfs/?version=2.0.0&request=GetCapabilities&service=WFS",
-                  "name": "WFS_DEMO",
-                  "title": "MapServer WFS Demo Map",
-                  "type": "text/xml",
-                  "service": "WFS",
-                  "description": "The WFS GetCapabilities URL for version 2.0.0"
-                },
-                {
-                  "href": "http://localhost:8080/wcs/?SERVICE=WCS&VERSION=2.0.0&REQUEST=GetCapabilities",
-                  "name": "WCS_DEMO",
-                  "title": "MapServer WCS Demo Map",
-                  "type": "text/xml",
-                  "service": "WCS",
-                  "description": "This is the WCS GetCapabilities URL for version 2.0.0"
-                }
-              ]
-            }
-          ]
+          "href": "http://localhost:8080/wcsdemo?f=json",
+          "title": "WCS Demo Mapfile (JSON)",
+          "type": "application/vnd.oai.openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "http://localhost:8080/wcsdemo?f=html",
+          "title": "WCS Demo Mapfile (HTML)",
+          "type": "text/html"
+        }
+      ]
+    },
+    {
+      "anchor": "http://localhost:8080/oapifdemo",
+      "service-desc": [
+        {
+          "href": "http://localhost:8080/oapifdemo?f=json",
+          "title": "OAPIF Demo Mapfile (JSON)",
+          "type": "application/vnd.oai.openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "http://localhost:8080/oapifdemo?f=html",
+          "title": "OAPIF Demo Mapfile (HTML)",
+          "type": "text/html"
+        }
+      ]
+    },
+    {
+      "anchor": "http://localhost:8080/kitchensink",
+      "service-desc": [
+        {
+          "href": "http://localhost:8080/kitchensink?f=json",
+          "title": "Kitchen Sink Demo Mapfile (JSON)",
+          "type": "application/vnd.oai.openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "http://localhost:8080/kitchensink?f=html",
+          "title": "Kitchen Sink Demo Mapfile (HTML)",
+          "type": "text/html"
         }
       ]
     }

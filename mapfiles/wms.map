@@ -1,5 +1,5 @@
 MAP
-    NAME "WMS_DEMO"
+    NAME "WMS Demo Mapfile"
     IMAGETYPE "png"
     SIZE 800 800
     EXTENT -180.0 -90 180 90
