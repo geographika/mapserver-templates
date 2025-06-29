@@ -39,14 +39,14 @@ jobs:
           cmake --build . --config Debug
 
       # Run the executable to generate output.html
-      - name: Generate output.html
-        shell: pwsh
-        run: |
-          cd build
-          mkdir output
-          .\Debug\mapserver-templates.exe ../mapserver-index/landing.html ../mapfiles/api-catalog.json > ./output/output.html
-          .\Debug\mapserver-templates.exe ../isric/landing.html ../mapfiles/api-catalog.json > ./output/index.html
-          Copy-Item -Path "../isric/*" -Destination "./output" -Recurse -Force
+      #- name: Generate output.html
+      #  shell: pwsh
+      #  run: |
+      #    cd build
+      #    mkdir output
+      #    .\Debug\mapserver-templates.exe ../mapserver-index/landing.html ../mapfiles/api-catalog.json > ./output/output.html
+      #    .\Debug\mapserver-templates.exe ../isric/landing.html ../mapfiles/api-catalog.json > ./output/index.html
+      #    Copy-Item -Path "../isric/*" -Destination "./output" -Recurse -Force
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
