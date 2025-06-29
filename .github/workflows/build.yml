@@ -53,5 +53,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build/output  # Deploy ONLY this folder
+          publish_dir: ./scripts/dist  # deploy this folder
           keep_files: false  # Overwrite existing files
