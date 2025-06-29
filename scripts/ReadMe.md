@@ -1,11 +1,11 @@
 # Demo App
 
 ```python
-cd D:\GitHub\mapserver-templates\scripts\dist
+cd D:\GitHub\mapserver-templates\scripts
 C:\Python312\python -m http.server --directory=. 8006
 ```
 
-http://localhost:8006
+http://localhost:8006/dist
 
 Regenerate JSON output:
 

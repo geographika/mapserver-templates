@@ -147,7 +147,7 @@ def generate_json(mf, root, alias):
     ogc_services = []
 
     jsn = {}
-    anchor = f"{root}/{alias}"
+    anchor = f"{root}" # /{alias}" # these are relative to current folder
 
     if check_metadata(d, keys=["wms", "ows"]):
         ows_services += generate_wms(anchor)
@@ -201,7 +201,7 @@ def main():
         "KITCHENSINK": r"D:\GitHub\mapserver-templates\mapfiles\kitchensink.map"
     }
 
-    root = ""
+    root = "."
     jsn = generate_index(root, cfg)
 
     index = os.path.join(root_folder, "api-catalog.json")
@@ -211,7 +211,8 @@ def main():
     exe_path = "../build/Debug/mapserver-templates.exe"
 
     for alias, mf in cfg.items():
-        fld = os.path.join(root_folder, alias.lower())
+        alias = alias.lower()
+        fld = os.path.join(root_folder, alias)
         os.makedirs(fld, exist_ok=True)
         jsn = generate_json(mf, root, alias)
 

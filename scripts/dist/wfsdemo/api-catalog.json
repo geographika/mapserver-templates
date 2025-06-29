@@ -1,24 +1,24 @@
 {
     "linkset": [
         {
-            "anchor": "/WFSDEMO/",
+            "anchor": "./",
             "title": "OWS Services",
             "description": "Mapfile Description",
             "service-desc": [
                 {
-                    "href": "/WFSDEMO/?version=1.0.0&request=GetCapabilities&service=WFS",
+                    "href": "./?version=1.0.0&request=GetCapabilities&service=WFS",
                     "title": "WFS GetCapabilities URL (version 1.0.0)",
                     "service": "WFS",
                     "type": "text/xml"
                 },
                 {
-                    "href": "/WFSDEMO/?version=1.1.0&request=GetCapabilities&service=WFS",
+                    "href": "./?version=1.1.0&request=GetCapabilities&service=WFS",
                     "title": "WFS GetCapabilities URL (version 1.1.0)",
                     "service": "WFS",
                     "type": "text/xml"
                 },
                 {
-                    "href": "/WFSDEMO/?version=2.0.0&request=GetCapabilities&service=WFS",
+                    "href": "./?version=2.0.0&request=GetCapabilities&service=WFS",
                     "title": "WFS GetCapabilities URL (version 2.0.0)",
                     "service": "WFS",
                     "type": "text/xml"

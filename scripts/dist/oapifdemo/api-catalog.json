@@ -1,10 +1,10 @@
 {
     "linkset": [
         {
-            "anchor": "/OAPIFDEMO",
+            "anchor": ".",
             "service-desc": [
                 {
-                    "href": "/OAPIFDEMO/ogcapi/",
+                    "href": "./ogcapi/",
                     "title": "OGC API Landing Page",
                     "service": "OAPIF",
                     "type": "application/json"
@@ -12,7 +12,7 @@
             ],
             "service-doc": [
                 {
-                    "href": "/OAPIFDEMO/ogcapi/",
+                    "href": "./ogcapi/",
                     "title": "OGC API Landing Page",
                     "service": "OAPIF",
                     "type": "application/json"
