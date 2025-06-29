@@ -112,3 +112,19 @@ Not sure how to get layer names. Maybe just use the map name?
 - https://demo.mapserver.org/cgi-bin/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=4096&HEIGHT=4096&LAYERS=WMS_server&STYLES=&FORMAT=application/openlayers
 
 
+## Landing Page
+
+
+## Mapfile Landing Page
+
+See `processLandingRequest` in mapogcapi.cpp
+
+```cpp
+  // define ambiguous elements
+  const char *description =
+      msOWSLookupMetadata(&(map->web.metadata), "A", "description");
+  if (!description)
+    description =
+        msOWSLookupMetadata(&(map->web.metadata), "OF",
+                            "abstract"); // fallback on abstract if necessary
+```
