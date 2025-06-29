@@ -1,0 +1,35 @@
+{
+    "linkset": [
+        {
+            "anchor": "/WCSDEMO/",
+            "title": "OWS Services",
+            "description": "Mapfile Description",
+            "service-desc": [
+                {
+                    "href": "/WCSDEMO/?version=1.0.0&request=GetCapabilities&service=WCS",
+                    "title": "WCS GetCapabilities URL (version 1.0.0)",
+                    "service": "WCS",
+                    "type": "text/xml"
+                },
+                {
+                    "href": "/WCSDEMO/?version=1.1.0&request=GetCapabilities&service=WCS",
+                    "title": "WCS GetCapabilities URL (version 1.1.0)",
+                    "service": "WCS",
+                    "type": "text/xml"
+                },
+                {
+                    "href": "/WCSDEMO/?version=2.0.0&request=GetCapabilities&service=WCS",
+                    "title": "WCS GetCapabilities URL (version 2.0.0)",
+                    "service": "WCS",
+                    "type": "text/xml"
+                },
+                {
+                    "href": "/WCSDEMO/?version=2.0.1&request=GetCapabilities&service=WCS",
+                    "title": "WCS GetCapabilities URL (version 2.0.1)",
+                    "service": "WCS",
+                    "type": "text/xml"
+                }
+            ]
+        }
+    ]
+}
