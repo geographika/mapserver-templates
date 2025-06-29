@@ -1,4 +1,4 @@
-"""
+r"""
 Script to validate JSON files against a schema.
 
 C:\VirtualEnvs\misc\Scripts\Activate.ps1
