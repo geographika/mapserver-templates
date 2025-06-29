@@ -1,102 +1,102 @@
 {
     "linkset": [
         {
-            "anchor": "/wmsdemo/",
+            "anchor": "./wmsdemo/",
             "service-desc": [
                 {
-                    "href": "/wmsdemo/api-catalog.json",
+                    "href": "./wmsdemo/api-catalog.json",
                     "title": "wms.map",
                     "type": "application/vnd.oai.openapi+json"
                 }
             ],
             "service-doc": [
                 {
-                    "href": "/wmsdemo/",
+                    "href": "./wmsdemo/",
                     "title": "wms.map",
                     "type": "text/html"
                 }
             ]
         },
         {
-            "anchor": "/wfsdemo/",
+            "anchor": "./wfsdemo/",
             "service-desc": [
                 {
-                    "href": "/wfsdemo/api-catalog.json",
+                    "href": "./wfsdemo/api-catalog.json",
                     "title": "wfs.map",
                     "type": "application/vnd.oai.openapi+json"
                 }
             ],
             "service-doc": [
                 {
-                    "href": "/wfsdemo/",
+                    "href": "./wfsdemo/",
                     "title": "wfs.map",
                     "type": "text/html"
                 }
             ]
         },
         {
-            "anchor": "/wcsdemo/",
+            "anchor": "./wcsdemo/",
             "service-desc": [
                 {
-                    "href": "/wcsdemo/api-catalog.json",
+                    "href": "./wcsdemo/api-catalog.json",
                     "title": "wcs.map",
                     "type": "application/vnd.oai.openapi+json"
                 }
             ],
             "service-doc": [
                 {
-                    "href": "/wcsdemo/",
+                    "href": "./wcsdemo/",
                     "title": "wcs.map",
                     "type": "text/html"
                 }
             ]
         },
         {
-            "anchor": "/oapifdemo/",
+            "anchor": "./oapifdemo/",
             "service-desc": [
                 {
-                    "href": "/oapifdemo/api-catalog.json",
+                    "href": "./oapifdemo/api-catalog.json",
                     "title": "oapif.map",
                     "type": "application/vnd.oai.openapi+json"
                 }
             ],
             "service-doc": [
                 {
-                    "href": "/oapifdemo/",
+                    "href": "./oapifdemo/",
                     "title": "oapif.map",
                     "type": "text/html"
                 }
             ]
         },
         {
-            "anchor": "/cgidemo/",
+            "anchor": "./cgidemo/",
             "service-desc": [
                 {
-                    "href": "/cgidemo/api-catalog.json",
+                    "href": "./cgidemo/api-catalog.json",
                     "title": "cgi.map",
                     "type": "application/vnd.oai.openapi+json"
                 }
             ],
             "service-doc": [
                 {
-                    "href": "/cgidemo/",
+                    "href": "./cgidemo/",
                     "title": "cgi.map",
                     "type": "text/html"
                 }
             ]
         },
         {
-            "anchor": "/kitchensink/",
+            "anchor": "./kitchensink/",
             "service-desc": [
                 {
-                    "href": "/kitchensink/api-catalog.json",
+                    "href": "./kitchensink/api-catalog.json",
                     "title": "kitchensink.map",
                     "type": "application/vnd.oai.openapi+json"
                 }
             ],
             "service-doc": [
                 {
-                    "href": "/kitchensink/",
+                    "href": "./kitchensink/",
                     "title": "kitchensink.map",
                     "type": "text/html"
                 }
