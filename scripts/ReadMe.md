@@ -12,7 +12,7 @@ Regenerate JSON output:
 ```
 C:\VirtualEnvs\misc\Scripts\Activate.ps1
 cd D:\GitHub\mapserver-templates\scripts
-pip install -e D:\GitHub\mappyfile
+# pip install -e D:\GitHub\mappyfile
 python services.py
 ```
 
