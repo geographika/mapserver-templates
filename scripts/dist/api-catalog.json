@@ -2,6 +2,9 @@
     "linkset": [
         {
             "anchor": "./wmsdemo/",
+            "title": "MapServer WMS Demo Map",
+            "layer-count": "1",
+            "mapfile": "wms.map",
             "service-desc": [
                 {
                     "href": "./wmsdemo/api-catalog.json",
@@ -19,6 +22,9 @@
         },
         {
             "anchor": "./wfsdemo/",
+            "title": "WFS Demo Mapfile",
+            "layer-count": "1",
+            "mapfile": "wfs.map",
             "service-desc": [
                 {
                     "href": "./wfsdemo/api-catalog.json",
@@ -36,6 +42,9 @@
         },
         {
             "anchor": "./wcsdemo/",
+            "title": "WCS Demo Mapfile",
+            "layer-count": "1",
+            "mapfile": "wcs.map",
             "service-desc": [
                 {
                     "href": "./wcsdemo/api-catalog.json",
@@ -53,6 +62,9 @@
         },
         {
             "anchor": "./oapifdemo/",
+            "title": "OAPIF Demo Mapfile",
+            "layer-count": "1",
+            "mapfile": "oapif.map",
             "service-desc": [
                 {
                     "href": "./oapifdemo/api-catalog.json",
@@ -70,6 +82,9 @@
         },
         {
             "anchor": "./cgidemo/",
+            "title": "CGI",
+            "layer-count": "1",
+            "mapfile": "cgi.map",
             "service-desc": [
                 {
                     "href": "./cgidemo/api-catalog.json",
@@ -87,6 +102,9 @@
         },
         {
             "anchor": "./kitchensink/",
+            "title": "MapServer Kitchensink Demo Map",
+            "layer-count": "1",
+            "mapfile": "kitchensink.map",
             "service-desc": [
                 {
                     "href": "./kitchensink/api-catalog.json",

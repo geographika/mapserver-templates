@@ -1,5 +1,5 @@
 MAP
-    NAME "WMS Demo Mapfile"
+    NAME "WMSMAP"
     IMAGETYPE "png"
     SIZE 800 800
     EXTENT -180.0 -90 180 90
@@ -11,7 +11,7 @@ MAP
             # The following requests can be enabled: GetCapabilities, GetMap, GetFeatureInfo and GetLegendGraphic
             "wms_enable_request" "GetCapabilities GetMap"
             "wms_srs" "EPSG:4326"
-            "wms_title" "MapServer WMS Demo Map"
+            "ows_title" "MapServer WMS Demo Map"
             # wms_onlineresource not working with OpenLayers requests!
             # fixed with https://github.com/MapServer/MapServer/pull/7297
             "ows_onlineresource" "http://localhost:8080/wms/?"

@@ -2,7 +2,14 @@
 
 This repository is used to store notes and tests related to [MS RFC 140: MapServer Homepage](https://mapserver.org/development/rfc/ms-rfc-140.html).
 
-A test application was created to more easily 
+A test C++ application was created to more easily test [inja](https://github.com/pantor/inja) templates.
+
+Example landing page is available at:
+
+- https://geographika.github.io/mapserver-templates/ (HTML)
+- https://geographika.github.io/mapserver-templates/api-catalog.json (JSON)
+
+- See also discussions at https://lists.osgeo.org/pipermail/mapserver-dev/2025-July/017246.html.
 
 ## Contents
 
@@ -15,8 +22,7 @@ A test application was created to more easily
 
 Example template outputs:
 
-- [Plain example](https://geographika.github.io/mapserver-templates/output.html)
-- [ISRIC example](https://geographika.github.io/mapserver-templates/)
+- [Bootstrap example](https://geographika.github.io/mapserver-templates/)
 
 ## Test Application Build Steps
 
@@ -77,3 +83,28 @@ cd D:\GitHub\mapserver-templates
 # template.inja data.json > output.html
 # mapserver-index/landing.html mapfiles/api-catalog.json
 ```
+
+## Demo Templates
+
+MapServer CONF file: https://github.com/geographika/mapserver-templates/blob/main/mapfiles/mapserver.conf
+
+```
+  MAPS
+    WMSDEMO "/etc/mapserver/wms.map"
+    WFSDEMO "/etc/mapserver/wfs.map"
+    WCSDEMO "/etc/mapserver/wcs.map"
+    OAPIFDEMO "/etc/mapserver/oapif.map"
+    CGIDEMO "/etc/mapserver/cgi.map"
+  END
+```
+
+Mapfiles can be seen at https://github.com/geographika/mapserver-templates/tree/main/mapfiles
+
+Viewing the demo output locally:
+
+```ps1
+C:\Python313\python -m http.server -d D:\GitHub\mapserver-templates\scripts\dist
+# http://localhost:8000
+```
+
+More details in [Demo ReadMe.md](./scripts/ReadMe.md).

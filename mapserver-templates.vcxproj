@@ -135,10 +135,6 @@
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\Data\ISRIC\ocs.sld" />
-    <None Include="..\mapserver\share\ogcapi\templates\html-plain\footer.html" />
-    <None Include="..\mapserver\share\ogcapi\templates\html-plain\header.html" />
-    <None Include="..\mapserver\share\ogcapi\templates\html-plain\landing.html" />
     <None Include=".github\workflows\build.yml" />
     <None Include=".gitignore" />
     <None Include="debugging.md" />
@@ -149,8 +145,6 @@
     <None Include="isric\maps.html" />
     <None Include="isric\readme.md" />
     <None Include="json.md" />
-    <None Include="mapfiles\api-catalog.commented.json" />
-    <None Include="mapfiles\api-catalog.json" />
     <None Include="mapfiles\cgi.map" />
     <None Include="mapfiles\data\ne_110m_coastline.fgb" />
     <None Include="mapfiles\data\ocs.sld" />
@@ -183,7 +177,20 @@
     <None Include="mapserver-index\output.html" />
     <None Include="mapserver-index\readme.md" />
     <None Include="ReadMe.md" />
-    <None Include="scripts\api-catalog-schema.json" />
+    <None Include="scripts\dist\api-catalog.json" />
+    <None Include="scripts\dist\cgidemo\api-catalog.json" />
+    <None Include="scripts\dist\cgidemo\index.html" />
+    <None Include="scripts\dist\index.html" />
+    <None Include="scripts\dist\kitchensink\api-catalog.json" />
+    <None Include="scripts\dist\kitchensink\index.html" />
+    <None Include="scripts\dist\oapifdemo\api-catalog.json" />
+    <None Include="scripts\dist\oapifdemo\index.html" />
+    <None Include="scripts\dist\wcsdemo\api-catalog.json" />
+    <None Include="scripts\dist\wcsdemo\index.html" />
+    <None Include="scripts\dist\wfsdemo\api-catalog.json" />
+    <None Include="scripts\dist\wfsdemo\index.html" />
+    <None Include="scripts\dist\wmsdemo\api-catalog.json" />
+    <None Include="scripts\dist\wmsdemo\index.html" />
     <None Include="scripts\ReadMe.md" />
     <None Include="scripts\services.py" />
     <None Include="scripts\test_request.py" />

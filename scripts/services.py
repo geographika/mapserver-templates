@@ -30,9 +30,22 @@ def generate_index(root, cfg):
     for alias, mf in cfg.items():
         alias = alias.lower()
 
+        d = mappyfile.open(mf)
+        # print(d["extent"])
+        layer_count = len(d["layers"])
+
+        md = d["web"]["metadata"]
+        if md and "ows_title" in md:
+            mapname = md["ows_title"]
+        else:
+            mapname = d["name"]
+
         filename = os.path.basename(mf)
         link = {
             "anchor": f"{root}/{alias}/",
+            "title": f"{mapname}",
+            "layer-count": f"{layer_count}",
+            "mapfile": f"{filename}",
             "service-desc": [
                 {
                     "href": f"{root}/{alias}/api-catalog.json",  # TODO replace with ?f=json
@@ -49,6 +62,7 @@ def generate_index(root, cfg):
             ],
         }
 
+        print(link)
         linkset.append(link)
 
     jsn = {"linkset": linkset}
@@ -58,30 +72,32 @@ def generate_index(root, cfg):
 
 def generate_oapif(anchor):
 
-    return [{
-        "anchor": f"{anchor}",
-        "service-desc": [
-            {
-                "href": f"{anchor}/ogcapi/",
-                "title": f"OGC API Landing Page",
-                "service": "OAPIF",
-                "type": "application/json",
-            }
-        ],
-        "service-doc": [
-            {
-                "href": f"{anchor}/ogcapi/",
-                "title": f"OGC API Landing Page",
-                "service": "OAPIF",
-                "type": "application/json",
-            }
-        ],
-    }]
+    return [
+        {
+            "anchor": f"{anchor}",
+            "service-desc": [
+                {
+                    "href": f"{anchor}/ogcapi/",
+                    "title": f"OGC API Landing Page",
+                    "service": "OAPIF",
+                    "type": "application/json",
+                }
+            ],
+            "service-doc": [
+                {
+                    "href": f"{anchor}/ogcapi/",
+                    "title": f"OGC API Landing Page",
+                    "service": "OAPIF",
+                    "type": "application/json",
+                }
+            ],
+        }
+    ]
 
 
 def generate_wms(anchor):
 
-    versions = ["1.0.0", "1.0.6", "1.0.7", "1.1.0", "1.1.1", "1.3.0"]
+    versions = ["1.0.0", "1.1.0", "1.1.1", "1.3.0"]
 
     # check if WMS is supported
     # in C also check USE_WMS_SVR
@@ -147,7 +163,7 @@ def generate_json(mf, root, alias):
     ogc_services = []
 
     jsn = {}
-    anchor = f"{root}" # /{alias}" # these are relative to current folder
+    anchor = f"{root}"  # /{alias}" # these are relative to current folder
 
     if check_metadata(d, keys=["wms", "ows"]):
         ows_services += generate_wms(anchor)
@@ -198,13 +214,15 @@ def main():
         "WCSDEMO": r"D:\GitHub\mapserver-templates\mapfiles\wcs.map",
         "OAPIFDEMO": r"D:\GitHub\mapserver-templates\mapfiles\oapif.map",
         "CGIDEMO": r"D:\GitHub\mapserver-templates\mapfiles\cgi.map",
-        "KITCHENSINK": r"D:\GitHub\mapserver-templates\mapfiles\kitchensink.map"
+        "KITCHENSINK": r"D:\GitHub\mapserver-templates\mapfiles\kitchensink.map",
     }
 
     root = "."
     jsn = generate_index(root, cfg)
 
     index = os.path.join(root_folder, "api-catalog.json")
+    print(f"Creating {index}")
+
     with open(index, "w") as f:
         f.write(json.dumps(jsn, indent=4))
 
@@ -217,6 +235,7 @@ def main():
         jsn = generate_json(mf, root, alias)
 
         fn = os.path.join(fld, "api-catalog.json")
+        print(f"Creating {fn}")
         with open(fn, "w") as f:
             f.write(json.dumps(jsn, indent=4))
 
