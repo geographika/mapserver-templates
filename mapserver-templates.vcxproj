@@ -135,9 +135,16 @@
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\TFS\mapserver-cloud\mapserver\.dockerignore" />
     <None Include=".github\workflows\build.yml" />
     <None Include=".gitignore" />
     <None Include="debugging.md" />
+    <None Include="docker\.dockerignore" />
+    <None Include="docker\Dockerfile" />
+    <None Include="docker\ReadMe.md" />
+    <None Include="docker\runtime\etc\apache2\conf-enabled\mapserver.conf" />
+    <None Include="docker\runtime\usr\local\bin\mapserv_wrapper" />
+    <None Include="docker\runtime\usr\local\bin\start-server" />
     <None Include="isric\app.css" />
     <None Include="isric\index.html" />
     <None Include="isric\landing.html" />
